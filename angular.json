@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/action egg",
+            "outputPath": "dist/action-egg",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "test:build:production"
+              "buildTarget": "action-egg:build:production"
             },
             "development": {
-              "buildTarget": "test:build:development"
+              "buildTarget": "action-egg:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n"
         },
-        "action-egg": {
+        "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "polyfills": [
