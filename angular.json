@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "test": {
+    "action-egg": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/test",
+            "outputPath": "dist/action egg",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n"
         },
-        "test": {
+        "action-egg": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "polyfills": [
