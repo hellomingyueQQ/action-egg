@@ -1,4 +1,4 @@
-name: 打包React项目
+name: 打包Angular项目
 on: push
 
 permissions:
