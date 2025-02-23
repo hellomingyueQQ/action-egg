@@ -1,10 +1,10 @@
 <h2 class="title" [ngStyle]="{'color': getRandomColor()}" >
-  距离 2026 年春节还有 {{ daysUntilSpringFestival }} 天, 任务量{{
+  任务量{{
   (numbersArray2015.length +
   numbersArray2016.length +
   numbersArray2017.length) /
   2
-  }}
+  }} / {{ daysUntilSpringFestival }} 
 </h2>
 <h2 class="title" [ngStyle]="{'color': getRandomColor()}">2017，还有 {{ numbersArray2017.length }} 个链接</h2>
 <div class="container">
