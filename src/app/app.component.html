@@ -1,16 +1,49 @@
-<h2 class="title">距离 2026 年春节还有 {{ daysUntilSpringFestival }} 天, 任务量{{(numbersArray2015.length+ numbersArray2016.length+ numbersArray2017.length)/2}}</h2> 
-<h2 class="title">2017，还有 {{ numbersArray2017.length }} 个链接</h2> 
+<h2 class="title">
+  距离 2026 年春节还有 {{ daysUntilSpringFestival }} 天, 任务量{{
+    (numbersArray2015.length +
+      numbersArray2016.length +
+      numbersArray2017.length) /
+      2
+  }}
+</h2>
+<h2 class="title">2017，还有 {{ numbersArray2017.length }} 个链接</h2>
 <div class="container">
-  <a class="box" *ngFor="let number of numbersArray2017" [href]="'https://www.bilibili.com/video/BV1YJ411y7d8?spm_id_from=333.788.videopod.episodes&vd_source=803f158dd0dd48567691e012329824f7&p=' + number" target="_blank">{{ number }}</a>
+  <a
+    class="box"
+    *ngFor="let number of numbersArray2017"
+    [href]="
+      'https://www.bilibili.com/video/BV1YJ411y7d8?spm_id_from=333.788.videopod.episodes&vd_source=803f158dd0dd48567691e012329824f7&p=' +
+      number
+    "
+    target="_blank"
+    >{{ number }}</a
+  >
 </div>
 
-<h2 class="title">2016，还有 {{ numbersArray2016.length }} 个链接</h2> 
+<h2 class="title">2016，还有 {{ numbersArray2016.length }} 个链接</h2>
 <div class="container">
-  <a class="box" *ngFor="let number of numbersArray2016" [href]="'https://www.bilibili.com/video/BV1ZJ411y7YJ?spm_id_from=333.788.videopod.episodes&vd_source=803f158dd0dd48567691e012329824f7&p=' + number" target="_blank">{{ number }}</a>
+  <a
+    class="box"
+    *ngFor="let number of numbersArray2016"
+    [href]="
+      'https://www.bilibili.com/video/BV1ZJ411y7YJ?spm_id_from=333.788.videopod.episodes&vd_source=803f158dd0dd48567691e012329824f7&p=' +
+      number
+    "
+    target="_blank"
+    >{{ number }}</a
+  >
 </div>
 
-<h2 class="title">2015，还有 {{ numbersArray2015.length }} 个链接</h2> 
+<h2 class="title">2015，还有 {{ numbersArray2015.length }} 个链接</h2>
 <div class="container">
-  <a class="box" *ngFor="let number of numbersArray2015" [href]="'https://www.bilibili.com/video/BV1bJ411k7oW?spm_id_from=333.788.videopod.episodes&vd_source=803f158dd0dd48567691e012329824f7&p=' + number" target="_blank">{{ number }}</a>
+  <a
+    class="box"
+    *ngFor="let number of numbersArray2015"
+    [href]="
+      'https://www.bilibili.com/video/BV1bJ411k7oW?spm_id_from=333.788.videopod.episodes&vd_source=803f158dd0dd48567691e012329824f7&p=' +
+      number
+    "
+    target="_blank"
+    >{{ number }}</a
+  >
 </div>
-
