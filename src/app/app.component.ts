@@ -68,11 +68,33 @@ export class AppComponent {
     293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306,
   ];
 
-  get daysUntilSpringFestival(): number {
-    const springFestival2026 = new Date('2026-02-17'); // 2026 年春节日期
+
+  get requiredDays(): number {
+    let totalLessons = this.numbersArray2015.length + 
+                        this.numbersArray2016.length + 
+                        this.numbersArray2017.length;
+                      
+    // 计算从现在到2026年底的工作日和周末数
     const today = new Date();
-    const timeDiff = springFestival2026.getTime() - today.getTime();
-    return Math.ceil(timeDiff / (1000 * 3600 * 24)); // 转换为天数
+    const endDate = new Date('2026-12-31');
+    let workdays = 0;
+    let weekendDays = 0;
+    
+    for(let d = new Date(today); d <= endDate; d.setDate(d.getDate() + 1)) {
+      const day = d.getDay();
+      if(day === 0 || day === 6) {
+        weekendDays++;
+        totalLessons-=3;
+      } else {
+        workdays++;
+        totalLessons-=2;
+      }
+      if (totalLessons<=0) {
+        break;
+      }
+    }
+
+    return workdays + weekendDays;
   }
 
   // 生成随机颜色
@@ -83,5 +105,12 @@ export class AppComponent {
       color += letters[Math.floor(Math.random() * 16)];
     }
     return color;
+  }
+
+  get daysUntilSpringFestival(): number {
+    const springFestival2026 = new Date('2026-02-17'); // 2026 年春节日期
+    const today = new Date();
+    const timeDiff = springFestival2026.getTime() - today.getTime();
+    return Math.ceil(timeDiff / (1000 * 3600 * 24)); // 转换为天数
   }
 }
