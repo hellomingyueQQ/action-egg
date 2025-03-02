@@ -71,3 +71,4 @@ https://www.bilibili.com/video/BV1Zy421v7pR/?spm_id_from=333.337.search-card.all
 // 用时
 // 记录常用尺寸，存储默认尺寸
 // 滚动也往下，这个好像不太好
+// 全屏如何铺上去，应该是在某个ui的上面
