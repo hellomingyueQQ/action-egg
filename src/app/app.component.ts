@@ -69,6 +69,13 @@ export class AppComponent {
     this.numbersArray2017[this.numbersArray2017.length - 1] -
     this.numbersArray2017.length;
 
+  get daysFromStart():number{
+    const startDate = new Date('2015-02-22');
+    const today = new Date();
+    const timeDiff = today.getTime() - startDate.getTime();
+    return Math.ceil(timeDiff / (1000 * 3600 * 24));
+  }
+
   get requiredDays(): number {
     let totalLessons =
       this.numbersArray2015.length +
