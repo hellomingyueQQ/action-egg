@@ -65,3 +65,8 @@ https://www.bilibili.com/video/BV1Zy421v7pR/?spm_id_from=333.337.search-card.all
 5. 高难: 需要深厚的技术积累
 
 最后可以根据各维度的得分情况，结合项目特点进行加权平均，得出项目的整体难度评估。这种评估方法可以帮助我们更客观地衡量项目的技术难度。
+
+
+英语
+Let's talk in English DVD
+ITEnglish的连接
