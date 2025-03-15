@@ -29,3 +29,12 @@
       number
     " target="_blank">{{ number }}</a>
 </div>
+
+<h2 class="title" [ngStyle]="{'color': getRandomColor()}">studio classroom，还有 {{ studioClassrooms.length }} 个链接</h2>
+<div class="container">
+  <a [ngStyle]="{'color': getRandomColor(),'background-color':getRandomColor()}" class="box"
+    *ngFor="let number of studioClassrooms;let i = index" [href]="
+      'https://www.bilibili.com/video/' +
+      number
+    " target="_blank">{{ i }}</a>
+</div>
