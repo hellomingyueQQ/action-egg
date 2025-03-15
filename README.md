@@ -70,3 +70,5 @@ https://www.bilibili.com/video/BV1Zy421v7pR/?spm_id_from=333.337.search-card.all
 英语
 Let's talk in English DVD
 ITEnglish的连接
+
+把英语都放上去，自己慢慢点
