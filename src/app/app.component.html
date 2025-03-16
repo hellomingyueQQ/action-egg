@@ -36,3 +36,22 @@
       number
     " target="_blank">{{ i }}</a>
 </div>
+
+
+<h2 class="title" [ngStyle]="{'color': getRandomColor()}">ITOne {{ ITOne.length }} 个链接</h2>
+<div class="container">
+  <a [ngStyle]="{'color': getRandomColor(),'background-color':getRandomColor()}" class="box"
+    *ngFor="let number of ITOne" [href]="
+      'https://www.bilibili.com/video/BV1984y1b7xK?spm_id_from=333.788.videopod.episodes&p=' +
+      number
+    " target="_blank">{{ number }}</a>
+</div>
+
+<h2 class="title" [ngStyle]="{'color': getRandomColor()}">ITTwo {{ ITTwo.length }} 个链接</h2>
+<div class="container">
+  <a [ngStyle]="{'color': getRandomColor(),'background-color':getRandomColor()}" class="box"
+    *ngFor="let number of ITTwo" [href]="
+      'https://www.bilibili.com/video/BV15Y4y1o7nF?spm_id_from=333.788.videopod.episodes&p=' +
+      number
+    " target="_blank">{{ number }}</a>
+</div>
