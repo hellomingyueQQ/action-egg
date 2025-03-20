@@ -68,7 +68,7 @@ export class AppComponent {
       this.numbersArray2017.length) *
       22) /
     60
-  ).toFixed(2);
+  ).toFixed(1);
 
   get daysFromStart(): number {
     const startDate = new Date('2025-02-22');
