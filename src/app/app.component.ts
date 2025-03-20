@@ -63,12 +63,12 @@ export class AppComponent {
     293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306,
   ];
 
-  finishedLessons = Math.floor(
+  finishedLessons = (
     ((this.numbersArray2017[this.numbersArray2017.length - 1] -
       this.numbersArray2017.length) *
       22) /
-      60
-  );
+    60
+  ).toFixed(2);
 
   get daysFromStart(): number {
     const startDate = new Date('2025-02-22');
