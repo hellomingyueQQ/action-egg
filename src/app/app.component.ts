@@ -65,7 +65,7 @@ export class AppComponent {
   finishedLessons = (
     ((this.numbersArray2017[this.numbersArray2017.length - 1] -
       this.numbersArray2017.length) *
-      22.5) /
+      22) /
     60
   ).toFixed(1);
 
