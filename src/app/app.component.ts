@@ -69,7 +69,7 @@ export class AppComponent {
     60
   ).toFixed(1);
 
-  averageLessons = (this.numbersArray2017[0] / this.daysFromStart).toFixed(1);
+  averageLessons = (this.numbersArray2017[0] / this.daysFromStart).toFixed(3);
 
   get daysFromStart(): number {
     const startDate = new Date('2025-02-22');
