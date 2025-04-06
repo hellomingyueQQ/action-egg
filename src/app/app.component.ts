@@ -106,6 +106,13 @@ export class AppComponent {
     return Math.ceil(timeDiff / (1000 * 3600 * 24));
   }
 
+  daysFromSpecificDate: number = (() => {
+    const specificDate = new Date('2025-02-07');
+    const today = new Date();
+    const timeDiff = today.getTime() - specificDate.getTime();
+    return Math.ceil(timeDiff / (1000 * 3600 * 24));
+  })();
+
   // 生成随机颜色
   getRandomColor(): string {
     const letters = '0123456789ABCDEF';
