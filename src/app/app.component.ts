@@ -94,9 +94,8 @@ export class AppComponent {
 
   finishedLessons = (
     ((this.numbersArray2017[this.numbersArray2017.length - 1] -
-      this.numbersArray2017.length) *
-      22) /
-    60
+      this.numbersArray2017.length)) /
+    3
   ).toFixed(1);
 
   get daysFromStart(): number {
