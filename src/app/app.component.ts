@@ -11,8 +11,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'action-egg';
   numbersArray2017: number[] = [
-      154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166,
-    167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178,
+    155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169,
+    170, 171, 172, 173, 174, 175, 176, 177, 178,
   ];
   numbersArray2016: number[] = [
     1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
@@ -93,8 +93,8 @@ export class AppComponent {
   ];
 
   finishedLessons = (
-    ((this.numbersArray2017[this.numbersArray2017.length - 1] -
-      this.numbersArray2017.length)) /
+    (this.numbersArray2017[this.numbersArray2017.length - 1] -
+      this.numbersArray2017.length) /
     3
   ).toFixed(1);
 
